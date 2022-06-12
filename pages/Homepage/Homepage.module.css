@@ -1,0 +1,88 @@
+.wrap {
+    text-align: center;
+}
+.header {
+    border-bottom: 1px solid rgba(79, 79, 79, 1.0);
+}
+.wrap h2 {
+    padding-top: 8px;
+}
+.name {
+    font-style: italic;
+    font-size: 36px;
+}
+
+.products {
+    width: 1000px;
+    margin: auto;
+}
+.products .wrapItem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.result {
+    border: 1px solid rgba(79, 79, 79, 1.0);
+    width: 400px;
+    color: rgba(79, 79, 79, 1.0);
+    margin: auto;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+.wrapItem .picture img {
+    margin-top: 25px;
+    width: 300px;
+    height: 300px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+.description .name {
+    color: rgba(79, 79, 79, 1.0);
+    font-size: 18px;
+    font-weight: bold;
+}
+.description .price {
+    color: rgba(79, 79, 79, 1.0);
+    margin-bottom: 5px;
+}
+.description button{
+    border-radius: 8px;
+    border: 2px solid rgba(79, 79, 79, 0.6);
+    width: 180px;
+    color: rgba(79, 79, 79, 1.0);
+    height: 38px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.description button:hover{
+    background-color: rgba(238, 210, 238, 1.0);
+    border-radius: 8px;
+    border: 3px solid #fff;
+    width: 180px;
+    color: rgba(79, 79, 79, 1.0);
+    height: 38px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.description input{
+    border-radius: 15px;
+    border: 2px solid rgba(79, 79, 79, 0.6);
+    width: 20px;
+    color: rgba(79, 79, 79, 1.0);
+    height: 18px;
+    text-align: center;
+    margin-left: 10px;
+}
+.description .basket img {
+    height: 42px;
+    width: 42px;
+    border: 2px solid rgba(79, 79, 79, 0.6);
+    border-radius: 10px;
+    margin-left: 12px;
+    margin-bottom: -12px;
+}
+
