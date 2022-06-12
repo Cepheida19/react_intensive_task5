@@ -87,16 +87,16 @@ const defaultState = {
 export const countReducer = (state = defaultState, action) => {
     switch (action.type){
       case "PLUS_COUNT":
-        return {...state, product: state.product.map((x,index) =>
-           (index === action.payload) ? ({...x, inBasket: x.inBasket + 1}) : ({...x}) )}; 
+        return {...state, product: state.product.map((itemProduct, index) =>
+           (index === action.payload) ? ({...itemProduct, inBasket: itemProduct.inBasket + 1}) : ({...itemProduct}) )}; 
       case "MINUS_COUNT":
-        return {...state, product: state.product.map((x,index) =>
-          (index === action.payload) ? ({...x, inBasket: x.inBasket - 1}) : ({...x}) )}; 
+        return {...state, product: state.product.map((itemProduct, index) =>
+          (index === action.payload) ? ({...itemProduct, inBasket: itemProduct.inBasket - 1}) : ({...itemProduct}) )}; 
         case "DELETE_POSITION":
-          return {...state, product: state.product.map((x,index) =>
-            (index === action.payload) ? ({...x, inBasket: 0}) : ({...x}) )};
+          return {...state, product: state.product.map((itemProduct, index) =>
+            (index === action.payload) ? ({...itemProduct, inBasket: 0}) : ({...itemProduct}) )};
         case "DELETE_ALL_POSITION":
-          return {...state, product: state.product.map(x =>({...x, inBasket: 0}) )};
+          return {...state, product: state.product.map(itemProduct =>({...itemProduct, inBasket: 0}) )};
       default:
         return state;
     }
